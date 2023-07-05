@@ -5,7 +5,17 @@
 
 export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
+  const clientsWithLetterInName = [];
 
+  for (let i = 0; i < array.length; i++) {
+    const client = array[i];
+
+    if (client.name.toLowerCase().includes(letter.toLowerCase())) {
+      clientsWithLetterInName.push(client.name);
+    }
+  }
+
+  return clientsWithLetterInName;
 }
 
 // === TEST YOURSELF ===

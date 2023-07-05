@@ -4,7 +4,15 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
+  let squareIntergers = [];
+  for (let i = 0; i < max; i++) {
+    let squareNum = i * i;
 
+    if (squareNum < max) {
+      squareIntergers.push(squareNum);
+    }
+  }
+  return squareIntergers;
 }
 
 // === TEST YOURSELF ===
